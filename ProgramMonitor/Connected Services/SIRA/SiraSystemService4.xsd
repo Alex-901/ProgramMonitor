@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="DtoLinearLine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Intercept" type="xs:double" />
+      <xs:element minOccurs="0" name="Slope" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoLinearLine" nillable="true" type="tns:DtoLinearLine" />
+  <xs:complexType name="ArrayOfDtoUnverifiedAnalysisInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoUnverifiedAnalysisInfo" nillable="true" type="tns:DtoUnverifiedAnalysisInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoUnverifiedAnalysisInfo" nillable="true" type="tns:ArrayOfDtoUnverifiedAnalysisInfo" />
+  <xs:complexType name="DtoUnverifiedAnalysisInfo">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Analysis" nillable="true" type="q1:DtoAnalysis" />
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisType" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoUnverifiedAnalysisInfo" nillable="true" type="tns:DtoUnverifiedAnalysisInfo" />
+  <xs:complexType name="ArrayOfDtoSystemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSystemInfo" nillable="true" type="tns:DtoSystemInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSystemInfo" nillable="true" type="tns:ArrayOfDtoSystemInfo" />
+  <xs:complexType name="DtoSystemInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApplicationVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientLoggingConfiguration" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientMetricsUpdatePeriod" type="ser:duration" />
+      <xs:element minOccurs="0" name="ClientPollPeriod" type="ser:duration" />
+      <xs:element minOccurs="0" name="DatabaseName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DatabaseVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HasCustomLoggingEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StatsEngineLocked" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSystemInfo" nillable="true" type="tns:DtoSystemInfo" />
+</xs:schema>

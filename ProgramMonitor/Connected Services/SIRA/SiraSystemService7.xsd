@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" />
+  <xs:complexType name="ServiceResultOfDtoAnalysisRunHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoAnalysisRun" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q1:ArrayOfDtoAnalysisRun" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoAnalysisRunHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoAnalysisRunHll1wPEA" />
+  <xs:complexType name="ServiceResult">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" minOccurs="0" name="Messages" nillable="true" type="q2:ArrayOfDtoServerMessage" />
+      <xs:element minOccurs="0" name="ServerElapsedTime" type="ser:duration" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" minOccurs="0" name="ServiceCallErrorInfo" nillable="true" type="q3:ServiceCallErrorInfo" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" minOccurs="0" name="ServiceCallResult" type="q4:ServiceCallResultType" />
+      <xs:element minOccurs="0" name="UnsavedChangesOnServer" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceResult" nillable="true" type="tns:ServiceResult" />
+  <xs:complexType name="ServiceResultOfboolean">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Payload" nillable="true" type="q5:ArrayOfboolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfboolean" nillable="true" type="tns:ServiceResultOfboolean" />
+  <xs:complexType name="ServiceResultOfDtoPermissionI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoPermission" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q6:ArrayOfDtoPermission" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoPermissionI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoPermissionI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoCompanyRoleI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoCompanyRole" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q7:ArrayOfDtoCompanyRole" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoCompanyRoleI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoCompanyRoleI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoObservationRawDataHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoObservationRawData" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q8:ArrayOfDtoObservationRawData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoObservationRawDataHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoObservationRawDataHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoGradeHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoGrade" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q9:ArrayOfDtoGrade" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoGradeHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoGradeHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoGradeAliasHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoGradeAlias" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q10:ArrayOfDtoGradeAlias" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoGradeAliasHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoGradeAliasHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoTankI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoTank" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q11:ArrayOfDtoTank" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoTankI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoTankI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoRegionI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoRegion" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q12:ArrayOfDtoRegion" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoRegionI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoRegionI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoRuleHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoRule" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q13:ArrayOfDtoRule" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoRuleHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoRuleHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoPostAnalysisServiceHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoPostAnalysisService" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q14:ArrayOfDtoPostAnalysisService" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoPostAnalysisServiceHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoPostAnalysisServiceHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoPublisherHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoPublisher" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q15:ArrayOfDtoPublisher" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoPublisherHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoPublisherHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoPublisherActionHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoPublisherAction" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q16:ArrayOfDtoPublisherAction" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoPublisherActionHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoPublisherActionHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoPostAnalysisServiceAction" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q17:ArrayOfDtoPostAnalysisServiceAction" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoPostAnalysisServiceRuleHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoPostAnalysisServiceRule" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q18:ArrayOfDtoPostAnalysisServiceRule" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoPostAnalysisServiceRuleHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoPostAnalysisServiceRuleHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoContactI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoContact" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q19:ArrayOfDtoContact" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoContactI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoContactI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoCompanyI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoCompany" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q20:ArrayOfDtoCompany" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoCompanyI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoCompanyI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoCompanyAndSiteItemsyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoCompanyAndSiteItems" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q21:ArrayOfDtoCompanyAndSiteItems" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoCompanyAndSiteItemsyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoCompanyAndSiteItemsyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoSiteNameI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiteName" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q22:ArrayOfDtoSiteName" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiteNameI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoSiteNameI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoSiteI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSite" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q23:ArrayOfDtoSite" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiteI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoSiteI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoTankSystemNameI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoTankSystemName" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q24:ArrayOfDtoTankSystemName" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoTankSystemNameI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoTankSystemNameI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoSiteTankSystemsyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiteTankSystems" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q25:ArrayOfDtoSiteTankSystems" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiteTankSystemsyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoSiteTankSystemsyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoTankSystemActivePeriodEntryyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoTankSystemActivePeriodEntry" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q26:ArrayOfDtoTankSystemActivePeriodEntry" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoTankSystemActivePeriodEntryyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoTankSystemActivePeriodEntryyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoTankSystemyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoTankSystem" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q27:ArrayOfDtoTankSystem" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoTankSystemyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoTankSystemyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoSiteTankSystemsChangeResultyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiteTankSystemsChangeResult" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q28:ArrayOfDtoSiteTankSystemsChangeResult" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiteTankSystemsChangeResultyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoSiteTankSystemsChangeResultyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoJobCompanyAndSiteItemsyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoJobCompanyAndSiteItems" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q29:ArrayOfDtoJobCompanyAndSiteItems" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoJobCompanyAndSiteItemsyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoJobCompanyAndSiteItemsyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoOperationyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoOperation" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q30:ArrayOfDtoOperation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoOperationyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoOperationyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoSiteAnalysesSummaryyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiteAnalysesSummary" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q31:ArrayOfDtoSiteAnalysesSummary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiteAnalysesSummaryyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoSiteAnalysesSummaryyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoAnalysisyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoAnalysis" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q32:ArrayOfDtoAnalysis" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoAnalysisyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoAnalysisJournalHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoAnalysisJournal" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q33:ArrayOfDtoAnalysisJournal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoAnalysisJournalHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoAnalysisJournalHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoAnalysesPublishingDatayKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoAnalysesPublishingData" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q34:ArrayOfDtoAnalysesPublishingData" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoAnalysesPublishingDatayKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoAnalysesPublishingDatayKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoMessageTnvYW2Wc">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoMessage" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" minOccurs="0" name="Payload" nillable="true" type="q35:ArrayOfDtoMessage" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoMessageTnvYW2Wc" nillable="true" type="tns:ServiceResultOfDtoMessageTnvYW2Wc" />
+  <xs:complexType name="ServiceResultOfDtoOperatorInfoyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoOperatorInfo" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q36:ArrayOfDtoOperatorInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoOperatorInfoyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoOperatorInfoyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfint">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="int" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Payload" nillable="true" type="q37:ArrayOfint" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfint" nillable="true" type="tns:ServiceResultOfint" />
+  <xs:complexType name="ServiceResultOfDtoAnalysesMetricsyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoAnalysesMetrics" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q38:ArrayOfDtoAnalysesMetrics" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoAnalysesMetricsyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoAnalysesMetricsyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoTankSystemAnalysisMetricsyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoTankSystemAnalysisMetrics" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q39:ArrayOfDtoTankSystemAnalysisMetrics" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoTankSystemAnalysisMetricsyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoTankSystemAnalysisMetricsyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoRunStateInfoyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoRunStateInfo" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q40:ArrayOfDtoRunStateInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoRunStateInfoyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoRunStateInfoyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoTankAnalysisSummaryyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoTankAnalysisSummary" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q41:ArrayOfDtoTankAnalysisSummary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoTankAnalysisSummaryyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoTankAnalysisSummaryyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoLastestCycleStartDateyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoLastestCycleStartDate" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q42:ArrayOfDtoLastestCycleStartDate" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoLastestCycleStartDateyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoLastestCycleStartDateyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoUnverifiedAnalysisInfoNS3hM9Iz">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoUnverifiedAnalysisInfo" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" minOccurs="0" name="Payload" nillable="true" type="q43:ArrayOfDtoUnverifiedAnalysisInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoUnverifiedAnalysisInfoNS3hM9Iz" nillable="true" type="tns:ServiceResultOfDtoUnverifiedAnalysisInfoNS3hM9Iz" />
+  <xs:complexType name="ServiceResultOfdateTime">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="dateTime" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Payload" nillable="true" type="q44:ArrayOfdateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfdateTime" nillable="true" type="tns:ServiceResultOfdateTime" />
+  <xs:complexType name="ServiceResultOfDtoCalibrationMdlryKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoCalibrationMdlr" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q45:ArrayOfDtoCalibrationMdlr" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoCalibrationMdlryKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoCalibrationMdlryKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoScreameryKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoScreamer" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q46:ArrayOfDtoScreamer" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoScreameryKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoScreameryKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Payload" nillable="true" type="q47:ArrayOfstring" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfstring" nillable="true" type="tns:ServiceResultOfstring" />
+  <xs:complexType name="ServiceResultOfDtoCalibrationyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoCalibration" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q48:ArrayOfDtoCalibration" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoCalibrationyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoCalibrationyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoCalibrationFactoryKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoCalibrationFactor" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q49:ArrayOfDtoCalibrationFactor" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoCalibrationFactoryKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoCalibrationFactoryKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoImportedFileyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoImportedFile" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q50:ArrayOfDtoImportedFile" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoImportedFileyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoImportedFileyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoImportedFileMessageHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoImportedFileMessage" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q51:ArrayOfDtoImportedFileMessage" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoImportedFileMessageHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoImportedFileMessageHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoSiraConfigyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiraConfig" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q52:ArrayOfDtoSiraConfig" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiraConfigyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoSiraConfigyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoSiraGradeConfigSetyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiraGradeConfigSet" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q53:ArrayOfDtoSiraGradeConfigSet" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiraGradeConfigSetyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoSiraGradeConfigSetyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoObservationRawDataChangeLogyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoObservationRawDataChangeLog" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q54:ArrayOfDtoObservationRawDataChangeLog" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoObservationRawDataChangeLogyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoObservationRawDataChangeLogyKa_PZV9R" />
+  <xs:complexType name="ServiceResultOfDtoClientInfoGzr_Sn7us">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoClientInfo" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q55:ArrayOfDtoClientInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoClientInfoGzr_Sn7us" nillable="true" type="tns:ServiceResultOfDtoClientInfoGzr_Sn7us" />
+  <xs:complexType name="ServiceResultOfDtoSystemInfoNS3hM9Iz">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSystemInfo" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" minOccurs="0" name="Payload" nillable="true" type="q56:ArrayOfDtoSystemInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSystemInfoNS3hM9Iz" nillable="true" type="tns:ServiceResultOfDtoSystemInfoNS3hM9Iz" />
+  <xs:complexType name="ServiceResultOfDtoSiraBlackFlagReportJournalHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoSiraBlackFlagReportJournal" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q57:ArrayOfDtoSiraBlackFlagReportJournal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoSiraBlackFlagReportJournalHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoSiraBlackFlagReportJournalHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoFileReaderI_PRg1ux4">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoFileReader" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Payload" nillable="true" type="q58:ArrayOfDtoFileReader" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoFileReaderI_PRg1ux4" nillable="true" type="tns:ServiceResultOfDtoFileReaderI_PRg1ux4" />
+  <xs:complexType name="ServiceResultOfDtoImportPathHll1wPEA">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoImportPath" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="Payload" nillable="true" type="q59:ArrayOfDtoImportPath" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoImportPathHll1wPEA" nillable="true" type="tns:ServiceResultOfDtoImportPathHll1wPEA" />
+  <xs:complexType name="ServiceResultOfDtoAnalysisTaskyKa_PZV9R">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ServiceResultOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="DtoAnalysisTask" Namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:ServiceResult">
+        <xs:sequence>
+          <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="Payload" nillable="true" type="q60:ArrayOfDtoAnalysisTask" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ServiceResultOfDtoAnalysisTaskyKa_PZV9R" nillable="true" type="tns:ServiceResultOfDtoAnalysisTaskyKa_PZV9R" />
+</xs:schema>

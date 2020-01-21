@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.BackEnd.Common.DtoTypes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.BackEnd.Common.DtoTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfDtoObservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoObservation" nillable="true" type="tns:DtoObservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoObservation" nillable="true" type="tns:ArrayOfDtoObservation" />
+  <xs:complexType name="DtoObservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdjustmentLitres" type="xs:double" />
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="CalibratedDipLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="DDCause" type="xs:int" />
+      <xs:element minOccurs="0" name="DeliveriesLitres" type="xs:double" />
+      <xs:element minOccurs="0" name="DipIgnored" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FutureObservationsUsedForAdjustment" type="xs:int" />
+      <xs:element minOccurs="0" name="HasAdjustment" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsInitialDip" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ObservationId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ObservationRawDataIds" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="RawDeliveriesLitres" type="xs:double" />
+      <xs:element minOccurs="0" name="RawDipLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="SalesLitres" type="xs:double" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="Timestamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="VarianceLitres" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoObservation" nillable="true" type="tns:DtoObservation" />
+</xs:schema>

@@ -1,0 +1,4 @@
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Common\bin\Debug\ProgramMonitor.Common.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Common\bin\Debug\ProgramMonitor.Common.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Common\obj\Debug\ProgramMonitor.Common.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Common\obj\Debug\ProgramMonitor.Common.pdb

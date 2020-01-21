@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9a151652-6bf0-4286-94fd-d75878e5545b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SiraSystemService.xsd" MetadataType="Schema" ID="48915a81-b8cd-40b8-b7e8-7d19f8dc2245" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd5" />
+    <MetadataFile FileName="SiraSystemService1.xsd" MetadataType="Schema" ID="e60c701a-d0bc-4948-bd2c-975af6dacabd" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" />
+    <MetadataFile FileName="SiraSystemService2.xsd" MetadataType="Schema" ID="57a009fc-55d0-4470-bba5-7fb76db0c7bc" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd11" />
+    <MetadataFile FileName="SiraSystemService3.xsd" MetadataType="Schema" ID="8c5017ac-7b77-4464-83ce-4e5472a6ee59" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd10" />
+    <MetadataFile FileName="SiraSystemService.disco" MetadataType="Disco" ID="50b53522-af08-45e4-b19c-69e207587521" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?disco" />
+    <MetadataFile FileName="SiraSystemService4.xsd" MetadataType="Schema" ID="9447a8ac-b559-4bb9-a57e-2d0a1cbde5a5" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd9" />
+    <MetadataFile FileName="SiraSystemService5.xsd" MetadataType="Schema" ID="09acf428-2f02-4da5-8f31-32db05fdd239" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd8" />
+    <MetadataFile FileName="SiraSystemService.wsdl" MetadataType="Wsdl" ID="e23194cd-6c98-41db-a514-04c69f4cfede" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?wsdl" />
+    <MetadataFile FileName="SiraSystemService6.xsd" MetadataType="Schema" ID="481ddc59-89e3-4917-a30a-1836e63632ff" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SiraSystemService7.xsd" MetadataType="Schema" ID="7b852220-8c8b-405c-aaa2-fd2e9fc255a6" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SiraSystemService8.xsd" MetadataType="Schema" ID="fb1abf9b-745d-4a30-9812-e62556678266" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SiraSystemService9.xsd" MetadataType="Schema" ID="d1b6780d-1eac-49fe-96f2-1c81b476b1f9" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd0" />
+    <MetadataFile FileName="SiraSystemService10.xsd" MetadataType="Schema" ID="52fc8181-eceb-4052-a5a7-0d09065e73eb" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd7" />
+    <MetadataFile FileName="SiraSystemService11.xsd" MetadataType="Schema" ID="bd6d4ea0-b253-419b-80c1-561189a85feb" SourceId="1" SourceUrl="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd6" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,2782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" />
+  <xs:element name="AnalysisRunGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q1:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisRunGetAllResult" nillable="true" type="q2:ServiceResultOfDtoAnalysisRunHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q3:ArrayOfint" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q4:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisRunGetResult" nillable="true" type="q5:ServiceResultOfDtoAnalysisRunHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q6:ArrayOfint" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q7:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisRunDeleteResult" nillable="true" type="q8:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q9:ArrayOfDtoAnalysisRun" />
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q10:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisRunCommitResult" nillable="true" type="q11:ServiceResultOfDtoAnalysisRunHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q12:ArrayOfDtoAnalysisRun" />
+        <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q13:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisRunCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisRunCreateResult" nillable="true" type="q14:ServiceResultOfDtoAnalysisRunHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermissionGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q15:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermissionGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PermissionGetAllResult" nillable="true" type="q16:ServiceResultOfDtoPermissionI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermissionGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q17:ArrayOfint" />
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q18:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PermissionGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PermissionGetResult" nillable="true" type="q19:ServiceResultOfDtoPermissionI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q20:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CompanyRoleGetAllResult" nillable="true" type="q21:ServiceResultOfDtoCompanyRoleI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q22:ArrayOfint" />
+        <xs:element xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q23:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CompanyRoleGetResult" nillable="true" type="q24:ServiceResultOfDtoCompanyRoleI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q25:ArrayOfint" />
+        <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q26:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CompanyRoleDeleteResult" nillable="true" type="q27:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q28:ArrayOfDtoCompanyRole" />
+        <xs:element xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q29:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CompanyRoleCommitResult" nillable="true" type="q30:ServiceResultOfDtoCompanyRoleI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q31:ArrayOfDtoCompanyRole" />
+        <xs:element xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q32:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompanyRoleCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CompanyRoleCreateResult" nillable="true" type="q33:ServiceResultOfDtoCompanyRoleI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q34:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ObservationRawDataGetAllResult" nillable="true" type="q35:ServiceResultOfDtoObservationRawDataHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q36:ArrayOfint" />
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q37:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ObservationRawDataGetResult" nillable="true" type="q38:ServiceResultOfDtoObservationRawDataHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q39:ArrayOfint" />
+        <xs:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q40:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ObservationRawDataDeleteResult" nillable="true" type="q41:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q42:ArrayOfDtoObservationRawData" />
+        <xs:element xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q43:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ObservationRawDataCommitResult" nillable="true" type="q44:ServiceResultOfDtoObservationRawDataHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q45:ArrayOfDtoObservationRawData" />
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q46:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObservationRawDataCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ObservationRawDataCreateResult" nillable="true" type="q47:ServiceResultOfDtoObservationRawDataHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q48:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GradeGetAllResult" nillable="true" type="q49:ServiceResultOfDtoGradeHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q50:ArrayOfint" />
+        <xs:element xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q51:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GradeGetResult" nillable="true" type="q52:ServiceResultOfDtoGradeHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q53:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GradeAliasGetAllResult" nillable="true" type="q54:ServiceResultOfDtoGradeAliasHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q55:ArrayOfint" />
+        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q56:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GradeAliasGetResult" nillable="true" type="q57:ServiceResultOfDtoGradeAliasHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q58:ArrayOfint" />
+        <xs:element xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q59:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GradeAliasDeleteResult" nillable="true" type="q60:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q61:ArrayOfDtoGradeAlias" />
+        <xs:element xmlns:q62="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q62:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GradeAliasCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GradeAliasCommitResult" nillable="true" type="q63:ServiceResultOfDtoGradeAliasHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q64:ArrayOfint" />
+        <xs:element xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q65:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="TankGetResult" nillable="true" type="q66:ServiceResultOfDtoTankI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q67:ArrayOfDtoTank" />
+        <xs:element xmlns:q68="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q68:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="TankCommitResult" nillable="true" type="q69:ServiceResultOfDtoTankI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q70:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RegionGetAllResult" nillable="true" type="q71:ServiceResultOfDtoRegionI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q72:ArrayOfint" />
+        <xs:element xmlns:q73="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q73:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RegionGetResult" nillable="true" type="q74:ServiceResultOfDtoRegionI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q75="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q75:ArrayOfint" />
+        <xs:element xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q76:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RegionDeleteResult" nillable="true" type="q77:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q78:ArrayOfDtoRegion" />
+        <xs:element xmlns:q79="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q79:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RegionCommitResult" nillable="true" type="q80:ServiceResultOfDtoRegionI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q81="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q81:ArrayOfDtoRegion" />
+        <xs:element xmlns:q82="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q82:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegionCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q83="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RegionCreateResult" nillable="true" type="q83:ServiceResultOfDtoRegionI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q84:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q85="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RuleGetAllResult" nillable="true" type="q85:ServiceResultOfDtoRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q86="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q86:ArrayOfint" />
+        <xs:element xmlns:q87="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q87:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q88="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RuleGetResult" nillable="true" type="q88:ServiceResultOfDtoRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q89="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q89:ArrayOfint" />
+        <xs:element xmlns:q90="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q90:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q91="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RuleDeleteResult" nillable="true" type="q91:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q92="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q92:ArrayOfDtoRule" />
+        <xs:element xmlns:q93="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q93:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q94="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RuleCommitResult" nillable="true" type="q94:ServiceResultOfDtoRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q95="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q95:ArrayOfDtoRule" />
+        <xs:element xmlns:q96="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q96:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RuleCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q97="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RuleCreateResult" nillable="true" type="q97:ServiceResultOfDtoRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q98="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q98:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q99="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceGetAllResult" nillable="true" type="q99:ServiceResultOfDtoPostAnalysisServiceHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q100="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q100:ArrayOfint" />
+        <xs:element xmlns:q101="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q101:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q102="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceGetResult" nillable="true" type="q102:ServiceResultOfDtoPostAnalysisServiceHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q103="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q103:ArrayOfint" />
+        <xs:element xmlns:q104="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q104:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q105="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceDeleteResult" nillable="true" type="q105:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q106="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q106:ArrayOfDtoPostAnalysisService" />
+        <xs:element xmlns:q107="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q107:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q108="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceCommitResult" nillable="true" type="q108:ServiceResultOfDtoPostAnalysisServiceHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q109="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q109:ArrayOfDtoPostAnalysisService" />
+        <xs:element xmlns:q110="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q110:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q111="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceCreateResult" nillable="true" type="q111:ServiceResultOfDtoPostAnalysisServiceHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q112="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q112:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q113="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherGetAllResult" nillable="true" type="q113:ServiceResultOfDtoPublisherHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q114="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q114:ArrayOfint" />
+        <xs:element xmlns:q115="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q115:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q116="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherGetResult" nillable="true" type="q116:ServiceResultOfDtoPublisherHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q117="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q117:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q118="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherActionGetAllResult" nillable="true" type="q118:ServiceResultOfDtoPublisherActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q119="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q119:ArrayOfint" />
+        <xs:element xmlns:q120="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q120:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q121="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherActionGetResult" nillable="true" type="q121:ServiceResultOfDtoPublisherActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q122="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q122:ArrayOfint" />
+        <xs:element xmlns:q123="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q123:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q124="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherActionDeleteResult" nillable="true" type="q124:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q125="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q125:ArrayOfDtoPublisherAction" />
+        <xs:element xmlns:q126="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q126:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q127="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherActionCommitResult" nillable="true" type="q127:ServiceResultOfDtoPublisherActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q128="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q128:ArrayOfDtoPublisherAction" />
+        <xs:element xmlns:q129="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q129:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublisherActionCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q130="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublisherActionCreateResult" nillable="true" type="q130:ServiceResultOfDtoPublisherActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q131="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q131:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q132="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceActionGetAllResult" nillable="true" type="q132:ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q133="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q133:ArrayOfint" />
+        <xs:element xmlns:q134="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q134:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q135="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceActionGetResult" nillable="true" type="q135:ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q136="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q136:ArrayOfint" />
+        <xs:element xmlns:q137="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q137:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q138="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceActionDeleteResult" nillable="true" type="q138:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q139="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q139:ArrayOfDtoPostAnalysisServiceAction" />
+        <xs:element xmlns:q140="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q140:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q141="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceActionCommitResult" nillable="true" type="q141:ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q142="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q142:ArrayOfDtoPostAnalysisServiceAction" />
+        <xs:element xmlns:q143="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q143:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceActionCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q144="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceActionCreateResult" nillable="true" type="q144:ServiceResultOfDtoPostAnalysisServiceActionHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q145="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q145:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q146="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceRuleGetAllResult" nillable="true" type="q146:ServiceResultOfDtoPostAnalysisServiceRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q147="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q147:ArrayOfint" />
+        <xs:element xmlns:q148="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q148:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q149="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceRuleGetResult" nillable="true" type="q149:ServiceResultOfDtoPostAnalysisServiceRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q150="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q150:ArrayOfint" />
+        <xs:element xmlns:q151="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q151:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q152="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceRuleDeleteResult" nillable="true" type="q152:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q153="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="entities" nillable="true" type="q153:ArrayOfDtoPostAnalysisServiceRule" />
+        <xs:element xmlns:q154="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q154:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PostAnalysisServiceRuleCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q155="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PostAnalysisServiceRuleCreateResult" nillable="true" type="q155:ServiceResultOfDtoPostAnalysisServiceRuleHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactGetEligibleForManagementReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q156="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q156:guid" />
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactGetEligibleForManagementReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q157="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactGetEligibleForManagementReportResult" nillable="true" type="q157:ServiceResultOfDtoContactI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactsResetPassword">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q158="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q158:guid" />
+        <xs:element minOccurs="0" name="contactId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactsResetPasswordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q159="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactsResetPasswordResult" nillable="true" type="q159:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisableAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q160="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q160:guid" />
+        <xs:element minOccurs="0" name="contactId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisableAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q161="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="DisableAccountResult" nillable="true" type="q161:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnableAccount">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q162="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q162:guid" />
+        <xs:element minOccurs="0" name="contactId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnableAccountResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q163="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="EnableAccountResult" nillable="true" type="q163:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCompanies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q164="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="dtos" nillable="true" type="q164:ArrayOfDtoCompany" />
+        <xs:element xmlns:q165="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q165:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCompaniesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q166="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CreateCompaniesResult" nillable="true" type="q166:ServiceResultOfDtoCompanyI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q167="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q167:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompaniesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q168="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetCompaniesResult" nillable="true" type="q168:ServiceResultOfDtoCompanyI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyAndSiteItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q169="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q169:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyAndSiteItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q170="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetCompanyAndSiteItemsResult" nillable="true" type="q170:ServiceResultOfDtoCompanyAndSiteItemsyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCompanies">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q171="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="dtos" nillable="true" type="q171:ArrayOfDtoCompany" />
+        <xs:element xmlns:q172="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q172:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifyCompaniesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q173="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ModifyCompaniesResult" nillable="true" type="q173:ServiceResultOfDtoCompanyI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q174="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q174:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q175="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetSiteNamesResult" nillable="true" type="q175:ServiceResultOfDtoSiteNameI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiteCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+        <xs:element minOccurs="0" name="siteCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="gaugeMethod" type="xs:int" />
+        <xs:element xmlns:q176="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q176:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiteCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q177="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SiteCreateResult" nillable="true" type="q177:ServiceResultOfDtoSiteI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SitesCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q178="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="sites" nillable="true" type="q178:ArrayOfDtoSite" />
+        <xs:element xmlns:q179="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q179:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SitesCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q180="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SitesCommitResult" nillable="true" type="q180:ServiceResultOfDtoSiteI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SitesGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q181="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q181:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SitesGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q182="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SitesGetAllResult" nillable="true" type="q182:ServiceResultOfDtoSiteI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmPendingSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q183="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q183:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmPendingSiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q184="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ConfirmPendingSiteResult" nillable="true" type="q184:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveTankSystemNames">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q185="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q185:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetActiveTankSystemNamesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q186="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetActiveTankSystemNamesResult" nillable="true" type="q186:ServiceResultOfDtoTankSystemNameI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteTankSystems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q187="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q187:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiteTankSystemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q188="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetSiteTankSystemsResult" nillable="true" type="q188:ServiceResultOfDtoSiteTankSystemsyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankSystemHistoryGetBySite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q189="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q189:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankSystemHistoryGetBySiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q190="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="TankSystemHistoryGetBySiteResult" nillable="true" type="q190:ServiceResultOfDtoTankSystemActivePeriodEntryyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankSystemsGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q191="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="tankSystemIds" nillable="true" type="q191:ArrayOfint" />
+        <xs:element xmlns:q192="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q192:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TankSystemsGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q193="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="TankSystemsGetResult" nillable="true" type="q193:ServiceResultOfDtoTankSystemyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSitesTankSystems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q194="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="siteDetails" nillable="true" type="q194:DtoSite" />
+        <xs:element xmlns:q195="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="tanks" nillable="true" type="q195:ArrayOfDtoTank" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element xmlns:q196="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="dtoTankSystems" nillable="true" type="q196:ArrayOfDtoTankSystem" />
+        <xs:element xmlns:q197="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q197:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSitesTankSystemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q198="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="UpdateSitesTankSystemsResult" nillable="true" type="q198:ServiceResultOfDtoSiteTankSystemsChangeResultyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSitesTankSystemsOutofService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q199="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="siteDetails" nillable="true" type="q199:DtoSite" />
+        <xs:element xmlns:q200="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="dtoTankSystems" nillable="true" type="q200:ArrayOfDtoTankSystem" />
+        <xs:element xmlns:q201="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q201:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateSitesTankSystemsOutofServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q202="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="UpdateSitesTankSystemsOutofServiceResult" nillable="true" type="q202:ServiceResultOfDtoSiteTankSystemsChangeResultyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmPendingTankSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tankSystemId" type="xs:int" />
+        <xs:element xmlns:q203="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q203:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmPendingTankSystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q204="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ConfirmPendingTankSystemResult" nillable="true" type="q204:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TanksCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q205="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="sites" nillable="true" type="q205:ArrayOfDtoTank" />
+        <xs:element xmlns:q206="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q206:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TanksCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q207="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="TanksCommitResult" nillable="true" type="q207:ServiceResultOfDtoTankI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssignTasksToRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+        <xs:element xmlns:q208="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="taskIds" nillable="true" type="q208:ArrayOfint" />
+        <xs:element xmlns:q209="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q209:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AssignTasksToRunResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q210="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AssignTasksToRunResult" nillable="true" type="q210:ServiceResultOfDtoAnalysisRunHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompaniesAndSitesByJobId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+        <xs:element xmlns:q211="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q211:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompaniesAndSitesByJobIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q212="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetCompaniesAndSitesByJobIdResult" nillable="true" type="q212:ServiceResultOfDtoJobCompanyAndSiteItemsyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartRegenerateAnalysisTasksList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q213="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q213:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartRegenerateAnalysisTasksListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q214="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="StartRegenerateAnalysisTasksListResult" nillable="true" type="q214:ServiceResultOfDtoOperationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllAnalysesSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q215="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q215:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllAnalysesSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q216="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAllAnalysesSummaryResult" nillable="true" type="q216:ServiceResultOfDtoSiteAnalysesSummaryyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalyses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tankSystemId" type="xs:int" />
+        <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="numberOfMonths" type="xs:int" />
+        <xs:element xmlns:q217="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q217:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q218="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysesResult" nillable="true" type="q218:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesByIds">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q219="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="analysisIds" nillable="true" type="q219:ArrayOfint" />
+        <xs:element xmlns:q220="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q220:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesByIdsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q221="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysesByIdsResult" nillable="true" type="q221:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesForSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element minOccurs="0" name="date" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="monthlyAnalyses" type="xs:boolean" />
+        <xs:element xmlns:q222="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q222:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesForSiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q223="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysesForSiteResult" nillable="true" type="q223:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesJournals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q224="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="tankSystemIds" nillable="true" type="q224:ArrayOfint" />
+        <xs:element xmlns:q225="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q225:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesJournalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q226="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysesJournalsResult" nillable="true" type="q226:ServiceResultOfDtoAnalysisJournalHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublishingAnalysesData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q227="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="publishingDataCriteria" nillable="true" type="q227:ArrayOfDtoPublishingDataCriteria" />
+        <xs:element xmlns:q228="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q228:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPublishingAnalysesDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q229="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetPublishingAnalysesDataResult" nillable="true" type="q229:ServiceResultOfDtoAnalysesPublishingDatayKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublishAnalysesData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q230="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="publishingData" nillable="true" type="q230:ArrayOfDtoAnalysesDataToPublish" />
+        <xs:element xmlns:q231="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="operatorInfo" nillable="true" type="q231:DtoOperatorInfo" />
+        <xs:element xmlns:q232="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q232:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PublishAnalysesDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q233="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PublishAnalysesDataResult" nillable="true" type="q233:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessages">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q234="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="dtoMessagesFilter" nillable="true" type="q234:DtoMessagesFilter" />
+        <xs:element xmlns:q235="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q235:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessagesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q236="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetMessagesResult" nillable="true" type="q236:ServiceResultOfDtoMessageTnvYW2Wc" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllNeoOperators">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q237="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q237:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllNeoOperatorsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q238="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAllNeoOperatorsResult" nillable="true" type="q238:ServiceResultOfDtoOperatorInfoyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q239="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" minOccurs="0" name="dtoMessage" nillable="true" type="q239:DtoMessage" />
+        <xs:element xmlns:q240="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q240:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AddMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q241="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AddMessageResult" nillable="true" type="q241:ServiceResultOfint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesOverlappingDates">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tankSystemId" type="xs:int" />
+        <xs:element minOccurs="0" name="startDate" nillable="true" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="numberOfMonths" type="xs:int" />
+        <xs:element xmlns:q242="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q242:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesOverlappingDatesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q243="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysesOverlappingDatesResult" nillable="true" type="q243:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesStateMetrics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q244="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q244:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysesStateMetricsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q245="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysesStateMetricsResult" nillable="true" type="q245:ServiceResultOfDtoAnalysesMetricsyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTankSystemAnalysisStateMetrics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+        <xs:element xmlns:q246="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q246:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTankSystemAnalysisStateMetricsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q247="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetTankSystemAnalysisStateMetricsResult" nillable="true" type="q247:ServiceResultOfDtoTankSystemAnalysisMetricsyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q248="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q248:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q249="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysisResult" nillable="true" type="q249:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysisRunStateInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+        <xs:element xmlns:q250="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q250:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysisRunStateInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q251="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysisRunStateInfoResult" nillable="true" type="q251:ServiceResultOfDtoRunStateInfoyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysisSummaries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q252="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q252:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAnalysisSummariesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q253="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAnalysisSummariesResult" nillable="true" type="q253:ServiceResultOfDtoTankAnalysisSummaryyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIntraMonthAnalyses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tankSystemId" type="xs:int" />
+        <xs:element minOccurs="0" name="periodMonths" type="xs:int" />
+        <xs:element xmlns:q254="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q254:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIntraMonthAnalysesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q255="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetIntraMonthAnalysesResult" nillable="true" type="q255:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLatestCycleStartDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="tankSystemId" type="xs:int" />
+        <xs:element xmlns:q256="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q256:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLatestCycleStartDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q257="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetLatestCycleStartDateResult" nillable="true" type="q257:ServiceResultOfDtoLastestCycleStartDateyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAnalyses">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+        <xs:element xmlns:q258="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q258:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAnalysesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q259="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetPendingAnalysesResult" nillable="true" type="q259:ServiceResultOfDtoUnverifiedAnalysisInfoNS3hM9Iz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAnalysesForSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q260="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q260:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPendingAnalysesForSiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q261="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetPendingAnalysesForSiteResult" nillable="true" type="q261:ServiceResultOfDtoUnverifiedAnalysisInfoNS3hM9Iz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecentSiteAnalysesSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q262="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q262:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRecentSiteAnalysesSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q263="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetRecentSiteAnalysesSummaryResult" nillable="true" type="q263:ServiceResultOfDtoSiteAnalysesSummaryyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVerifiedAnalysesPeriods">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+        <xs:element xmlns:q264="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q264:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVerifiedAnalysesPeriodsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q265="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetVerifiedAnalysesPeriodsResult" nillable="true" type="q265:ServiceResultOfdateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplyOptimalTankCalibration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q266="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q266:ArrayOfint" />
+        <xs:element minOccurs="0" name="rHSm" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="lHSm" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="fromLevel" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element xmlns:q267="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q267:DtoSessionCommand" />
+        <xs:element xmlns:q268="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q268:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ApplyOptimalTankCalibrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q269="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ApplyOptimalTankCalibrationResult" nillable="true" type="q269:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectDDWithOneMonth">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q270="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="observationIdsToBeCorrected" nillable="true" type="q270:ArrayOfint" />
+        <xs:element xmlns:q271="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q271:ArrayOfint" />
+        <xs:element xmlns:q272="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q272:DtoSessionCommand" />
+        <xs:element xmlns:q273="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q273:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectDDWithOneMonthResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q274="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CorrectDDWithOneMonthResult" nillable="true" type="q274:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectDDsUnrestricted">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q275="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="observationIdsToBeCorrected" nillable="true" type="q275:ArrayOfint" />
+        <xs:element xmlns:q276="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q276:ArrayOfint" />
+        <xs:element xmlns:q277="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q277:DtoSessionCommand" />
+        <xs:element xmlns:q278="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q278:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectDDsUnrestrictedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q279="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CorrectDDsUnrestrictedResult" nillable="true" type="q279:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectDDsWithinRange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="firstObs" type="xs:int" />
+        <xs:element minOccurs="0" name="lastObs" type="xs:int" />
+        <xs:element xmlns:q280="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q280:ArrayOfint" />
+        <xs:element xmlns:q281="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q281:DtoSessionCommand" />
+        <xs:element xmlns:q282="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q282:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CorrectDDsWithinRangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q283="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CorrectDDsWithinRangeResult" nillable="true" type="q283:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindOptimalTankCalibration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q284="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q284:ArrayOfint" />
+        <xs:element xmlns:q285="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q285:DtoSessionCommand" />
+        <xs:element xmlns:q286="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q286:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindOptimalTankCalibrationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q287="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FindOptimalTankCalibrationResult" nillable="true" type="q287:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindOptimalTankCalibrationMdlr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="highRange" type="xs:double" />
+        <xs:element minOccurs="0" name="lowRange" type="xs:double" />
+        <xs:element minOccurs="0" name="resolution" type="xs:double" />
+        <xs:element xmlns:q288="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q288:DtoSessionCommand" />
+        <xs:element xmlns:q289="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q289:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FindOptimalTankCalibrationMdlrResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q290="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FindOptimalTankCalibrationMdlrResult" nillable="true" type="q290:ServiceResultOfDtoCalibrationMdlryKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MoveObservationsToNextAnalysis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element xmlns:q291="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q291:DtoSessionCommand" />
+        <xs:element xmlns:q292="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q292:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MoveObservationsToNextAnalysisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q293="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="MoveObservationsToNextAnalysisResult" nillable="true" type="q293:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MoveObservationsToPriorAnalysis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="upToDate" type="xs:dateTime" />
+        <xs:element xmlns:q294="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q294:DtoSessionCommand" />
+        <xs:element xmlns:q295="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q295:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MoveObservationsToPriorAnalysisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q296="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="MoveObservationsToPriorAnalysisResult" nillable="true" type="q296:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RawObservationsCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q297="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="observations" nillable="true" type="q297:ArrayOfDtoObservationRawData" />
+        <xs:element xmlns:q298="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q298:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RawObservationsCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q299="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RawObservationsCommitResult" nillable="true" type="q299:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePoorDips">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q300="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q300:DtoSessionCommand" />
+        <xs:element xmlns:q301="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q301:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemovePoorDipsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q302="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RemovePoorDipsResult" nillable="true" type="q302:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestoreRawData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q303="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q303:DtoSessionCommand" />
+        <xs:element xmlns:q304="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q304:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RestoreRawDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q305="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RestoreRawDataResult" nillable="true" type="q305:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Save">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="verifiedState" type="xs:int" />
+        <xs:element xmlns:q306="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q306:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q307="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SaveResult" nillable="true" type="q307:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScreamersGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q308="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q308:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ScreamersGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q309="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ScreamersGetAllResult" nillable="true" type="q309:ServiceResultOfDtoScreameryKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnalysisResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="result" type="xs:int" />
+        <xs:element minOccurs="0" name="reasonCode" type="xs:int" />
+        <xs:element minOccurs="0" name="verifiedState" type="xs:int" />
+        <xs:element xmlns:q310="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q310:DtoSessionCommand" />
+        <xs:element xmlns:q311="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q311:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnalysisResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q312="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SetAnalysisResultResult" nillable="true" type="q312:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnalysisVerified">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element minOccurs="0" name="verifiedState" type="xs:int" />
+        <xs:element xmlns:q313="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q313:DtoSessionCommand" />
+        <xs:element xmlns:q314="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q314:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetAnalysisVerifiedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q315="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SetAnalysisVerifiedResult" nillable="true" type="q315:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiraOpStartNewSavingSession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q316="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q316:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiraOpStartNewSavingSessionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q317="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SiraOpStartNewSavingSessionResult" nillable="true" type="q317:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartNewBrowsingSession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q318="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q318:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="StartNewBrowsingSessionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q319="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="StartNewBrowsingSessionResult" nillable="true" type="q319:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SystemCorrectsDDWithRestrictedPeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q320="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q320:ArrayOfint" />
+        <xs:element xmlns:q321="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q321:DtoSessionCommand" />
+        <xs:element xmlns:q322="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q322:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SystemCorrectsDDWithRestrictedPeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q323="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SystemCorrectsDDWithRestrictedPeriodResult" nillable="true" type="q323:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ToggleDipsRemoved">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q324="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="observationIdsToBeIgnored" nillable="true" type="q324:ArrayOfint" />
+        <xs:element xmlns:q325="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="observationIdsToBeIncluded" nillable="true" type="q325:ArrayOfint" />
+        <xs:element xmlns:q326="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q326:DtoSessionCommand" />
+        <xs:element xmlns:q327="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q327:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ToggleDipsRemovedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q328="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ToggleDipsRemovedResult" nillable="true" type="q328:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UndoActions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q329="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="returnAnalysisIds" nillable="true" type="q329:ArrayOfint" />
+        <xs:element xmlns:q330="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q330:DtoSessionCommand" />
+        <xs:element xmlns:q331="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q331:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UndoActionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q332="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="UndoActionsResult" nillable="true" type="q332:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UndoCorrections">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q333="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="correctedObservationIds" nillable="true" type="q333:ArrayOfint" />
+        <xs:element xmlns:q334="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q334:DtoSessionCommand" />
+        <xs:element xmlns:q335="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q335:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UndoCorrectionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q336="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="UndoCorrectionsResult" nillable="true" type="q336:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UndoDeliveryCorrections">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q337="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q337:DtoSessionCommand" />
+        <xs:element xmlns:q338="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q338:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UndoDeliveryCorrectionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q339="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="UndoDeliveryCorrectionsResult" nillable="true" type="q339:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeliveryRecordingProblem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="analysisId" type="xs:int" />
+        <xs:element xmlns:q340="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sessionCommand" type="q340:DtoSessionCommand" />
+        <xs:element xmlns:q341="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q341:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeliveryRecordingProblemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q342="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="DeliveryRecordingProblemResult" nillable="true" type="q342:ServiceResultOfDtoAnalysisyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ping">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RunSelfCheck">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q343="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q343:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RunSelfCheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q344="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="RunSelfCheckResult" nillable="true" type="q344:ServiceResultOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q345="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="calibrations" nillable="true" type="q345:ArrayOfDtoCalibration" />
+        <xs:element xmlns:q346="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q346:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q347="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationsCommitResult" nillable="true" type="q347:ServiceResultOfDtoCalibrationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q348="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="calibrations" nillable="true" type="q348:ArrayOfDtoCalibration" />
+        <xs:element xmlns:q349="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q349:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q350="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationsCreateResult" nillable="true" type="q350:ServiceResultOfDtoCalibrationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q351="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="calibrationIds" nillable="true" type="q351:ArrayOfint" />
+        <xs:element xmlns:q352="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q352:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q353="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationsDeleteResult" nillable="true" type="q353:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsForTankSystemsGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q354="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="tankSystemIds" nillable="true" type="q354:ArrayOfint" />
+        <xs:element xmlns:q355="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q355:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsForTankSystemsGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q356="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationsForTankSystemsGetResult" nillable="true" type="q356:ServiceResultOfDtoCalibrationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q357="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="calibrationsIds" nillable="true" type="q357:ArrayOfint" />
+        <xs:element xmlns:q358="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q358:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q359="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationsGetResult" nillable="true" type="q359:ServiceResultOfDtoCalibrationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationFactorsCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q360="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="calibrationFactors" nillable="true" type="q360:ArrayOfDtoCalibrationFactor" />
+        <xs:element xmlns:q361="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q361:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationFactorsCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q362="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationFactorsCommitResult" nillable="true" type="q362:ServiceResultOfDtoCalibrationFactoryKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationFactorsCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q363="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="calibrationFactors" nillable="true" type="q363:ArrayOfDtoCalibrationFactor" />
+        <xs:element xmlns:q364="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q364:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationFactorsCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q365="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationFactorsCreateResult" nillable="true" type="q365:ServiceResultOfDtoCalibrationFactoryKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationFactorsDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q366="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="calibrationFactorIds" nillable="true" type="q366:ArrayOfint" />
+        <xs:element xmlns:q367="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q367:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationFactorsDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q368="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationFactorsDeleteResult" nillable="true" type="q368:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsFactorsGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q369="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="calibrationFactorIds" nillable="true" type="q369:ArrayOfint" />
+        <xs:element xmlns:q370="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q370:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalibrationsFactorsGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q371="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CalibrationsFactorsGetResult" nillable="true" type="q371:ServiceResultOfDtoCalibrationFactoryKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall1">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q372="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" minOccurs="0" name="DummyCall1Result" nillable="true" type="q372:DtoServerMessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall2">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q373="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="DummyCall2Result" nillable="true" type="q373:DtoTank" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall5">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall5Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q374="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="DummyCall5Result" nillable="true" type="q374:DtoTankSystemActivePeriodEntry" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall6">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall6Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q375="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" minOccurs="0" name="DummyCall6Result" nillable="true" type="q375:DtoLogEvent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall7">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall7Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q376="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" minOccurs="0" name="DummyCall7Result" nillable="true" type="q376:DtoClientMetric" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall8">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall8Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q377="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="DummyCall8Result" nillable="true" type="q377:DtoObservationRawData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall9">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DummyCall9Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q378="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="DummyCall9Result" nillable="true" type="q378:ServiceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileGetFor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element xmlns:q379="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q379:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileGetForResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q380="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileGetForResult" nillable="true" type="q380:ServiceResultOfDtoImportedFileyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q381="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q381:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q382="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileMessageGetAllResult" nillable="true" type="q382:ServiceResultOfDtoImportedFileMessageHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetByParent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q383="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="fileIds" nillable="true" type="q383:ArrayOfint" />
+        <xs:element xmlns:q384="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q384:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetByParentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q385="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileMessageGetByParentResult" nillable="true" type="q385:ServiceResultOfDtoImportedFileMessageHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSiraConfigurationSets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q386="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="setTemplates" nillable="true" type="q386:ArrayOfDtoSiraConfig" />
+        <xs:element xmlns:q387="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q387:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSiraConfigurationSetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q388="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CreateSiraConfigurationSetsResult" nillable="true" type="q388:ServiceResultOfDtoSiraConfigyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSiraConfigurationSets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q389="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="configurationId" nillable="true" type="q389:ArrayOfint" />
+        <xs:element xmlns:q390="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q390:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSiraConfigurationSetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q391="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="DeleteSiraConfigurationSetsResult" nillable="true" type="q391:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSiraConfigurations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q392="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q392:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllSiraConfigurationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q393="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAllSiraConfigurationsResult" nillable="true" type="q393:ServiceResultOfDtoSiraConfigyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiraConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="siteId" type="xs:int" />
+        <xs:element xmlns:q394="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q394:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiraConfigurationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q395="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetSiraConfigurationResult" nillable="true" type="q395:ServiceResultOfDtoSiraConfigyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiraGradeConfigurationSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q396="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="siraGradeConfigFilter" nillable="true" type="q396:DtoSiraGradeConfigFilter" />
+        <xs:element xmlns:q397="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q397:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSiraGradeConfigurationSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q398="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetSiraGradeConfigurationSetResult" nillable="true" type="q398:ServiceResultOfDtoSiraGradeConfigSetyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySiraConfigurationSets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q399="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="sets" nillable="true" type="q399:ArrayOfDtoSiraConfig" />
+        <xs:element xmlns:q400="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q400:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModifySiraConfigurationSetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q401="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ModifySiraConfigurationSetsResult" nillable="true" type="q401:ServiceResultOfDtoSiraConfigyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveSiraGradeConfigurationSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q402="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="siraGradeConfigSet" nillable="true" type="q402:DtoSiraGradeConfigSet" />
+        <xs:element xmlns:q403="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="siraGradeConfigFilter" nillable="true" type="q403:DtoSiraGradeConfigFilter" />
+        <xs:element xmlns:q404="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q404:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveSiraGradeConfigurationSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q405="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SaveSiraGradeConfigurationSetResult" nillable="true" type="q405:ServiceResultOfDtoSiraGradeConfigSetyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAuditLogs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q406="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="auditLogs" nillable="true" type="q406:ArrayOfDtoAuditLog" />
+        <xs:element xmlns:q407="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q407:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAuditLogsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q408="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="CreateAuditLogsResult" nillable="true" type="q408:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOperations">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q409="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q409:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllOperationsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q410="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetAllOperationsResult" nillable="true" type="q410:ServiceResultOfDtoOperationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObservationRawDataChangedLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+        <xs:element minOccurs="0" name="fromDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="toDate" type="xs:dateTime" />
+        <xs:element xmlns:q411="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q411:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetObservationRawDataChangedLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q412="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetObservationRawDataChangedLogResult" nillable="true" type="q412:ServiceResultOfDtoObservationRawDataChangeLogyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOperationStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q413="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="operationIds" nillable="true" type="q413:ArrayOfint" />
+        <xs:element xmlns:q414="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q414:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOperationStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q415="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetOperationStatusResult" nillable="true" type="q415:ServiceResultOfDtoOperationyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSitesByCompanyAndProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+        <xs:element minOccurs="0" name="productId" type="xs:int" />
+        <xs:element xmlns:q416="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q416:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSitesByCompanyAndProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q417="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetSitesByCompanyAndProductResult" nillable="true" type="q417:ServiceResultOfDtoSiteI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSitesByCompanyId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="companyId" type="xs:int" />
+        <xs:element xmlns:q418="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q418:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSitesByCompanyIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q419="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetSitesByCompanyIdResult" nillable="true" type="q419:ServiceResultOfDtoSiteI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q420="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q420:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q421="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="GetClientsResult" nillable="true" type="q421:ServiceResultOfDtoClientInfoGzr_Sn7us" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OpenClientSession">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="hostName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OpenClientSessionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q422="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="OpenClientSessionResult" type="q422:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PollServer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q423="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" minOccurs="0" name="logEvents" nillable="true" type="q423:ArrayOfDtoLogEvent" />
+        <xs:element xmlns:q424="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" minOccurs="0" name="clientMetrics" nillable="true" type="q424:ArrayOfDtoClientMetric" />
+        <xs:element minOccurs="0" name="lastReceivedChangeId" type="xs:int" />
+        <xs:element xmlns:q425="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q425:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PollServerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q426="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="PollServerResult" nillable="true" type="q426:ServiceResultOfDtoSystemInfoNS3hM9Iz" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiraBlackFlagReportJournalGetByTankSystem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q427="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parentIds" nillable="true" type="q427:ArrayOfint" />
+        <xs:element xmlns:q428="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q428:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiraBlackFlagReportJournalGetByTankSystemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q429="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SiraBlackFlagReportJournalGetByTankSystemResult" nillable="true" type="q429:ServiceResultOfDtoSiraBlackFlagReportJournalHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiraBlackFlagReportJournalGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q430="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q430:ArrayOfint" />
+        <xs:element xmlns:q431="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q431:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SiraBlackFlagReportJournalGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q432="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="SiraBlackFlagReportJournalGetResult" nillable="true" type="q432:ServiceResultOfDtoSiraBlackFlagReportJournalHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q433="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q433:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q434="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactGetAllResult" nillable="true" type="q434:ServiceResultOfDtoContactI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q435="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q435:ArrayOfint" />
+        <xs:element xmlns:q436="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q436:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q437="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactGetResult" nillable="true" type="q437:ServiceResultOfDtoContactI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q438="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q438:ArrayOfint" />
+        <xs:element xmlns:q439="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q439:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q440="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactDeleteResult" nillable="true" type="q440:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q441="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q441:ArrayOfDtoContact" />
+        <xs:element xmlns:q442="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q442:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q443="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactCommitResult" nillable="true" type="q443:ServiceResultOfDtoContactI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q444="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q444:ArrayOfDtoContact" />
+        <xs:element xmlns:q445="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q445:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContactCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q446="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ContactCreateResult" nillable="true" type="q446:ServiceResultOfDtoContactI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q447="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q447:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q448="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FileReaderGetAllResult" nillable="true" type="q448:ServiceResultOfDtoFileReaderI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q449="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q449:ArrayOfint" />
+        <xs:element xmlns:q450="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q450:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q451="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FileReaderGetResult" nillable="true" type="q451:ServiceResultOfDtoFileReaderI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q452="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q452:ArrayOfint" />
+        <xs:element xmlns:q453="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q453:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q454="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FileReaderDeleteResult" nillable="true" type="q454:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q455="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q455:ArrayOfDtoFileReader" />
+        <xs:element xmlns:q456="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q456:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q457="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FileReaderCommitResult" nillable="true" type="q457:ServiceResultOfDtoFileReaderI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderCreate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q458="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="entities" nillable="true" type="q458:ArrayOfDtoFileReader" />
+        <xs:element xmlns:q459="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q459:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileReaderCreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q460="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="FileReaderCreateResult" nillable="true" type="q460:ServiceResultOfDtoFileReaderI_PRg1ux4" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportPathGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q461="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q461:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportPathGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q462="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportPathGetAllResult" nillable="true" type="q462:ServiceResultOfDtoImportPathHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportPathGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q463="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q463:ArrayOfint" />
+        <xs:element xmlns:q464="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q464:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportPathGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q465="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportPathGetResult" nillable="true" type="q465:ServiceResultOfDtoImportPathHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q466="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q466:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q467="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileGetAllResult" nillable="true" type="q467:ServiceResultOfDtoImportedFileyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q468="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q468:ArrayOfint" />
+        <xs:element xmlns:q469="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q469:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q470="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileGetResult" nillable="true" type="q470:ServiceResultOfDtoImportedFileyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetByImportedFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q471="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="parentIds" nillable="true" type="q471:ArrayOfint" />
+        <xs:element xmlns:q472="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q472:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetByImportedFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q473="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileMessageGetByImportedFileResult" nillable="true" type="q473:ServiceResultOfDtoImportedFileMessageHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q474="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q474:ArrayOfint" />
+        <xs:element xmlns:q475="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q475:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImportedFileMessageGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q476="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="ImportedFileMessageGetResult" nillable="true" type="q476:ServiceResultOfDtoImportedFileMessageHll1wPEA" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskGetAll">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q477="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q477:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskGetAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q478="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisTaskGetAllResult" nillable="true" type="q478:ServiceResultOfDtoAnalysisTaskyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskGet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q479="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q479:ArrayOfint" />
+        <xs:element xmlns:q480="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q480:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskGetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q481="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisTaskGetResult" nillable="true" type="q481:ServiceResultOfDtoAnalysisTaskyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskDelete">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q482="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="entityIds" nillable="true" type="q482:ArrayOfint" />
+        <xs:element xmlns:q483="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q483:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskDeleteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q484="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisTaskDeleteResult" nillable="true" type="q484:ServiceResultOfboolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskCommit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q485="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="entities" nillable="true" type="q485:ArrayOfDtoAnalysisTask" />
+        <xs:element xmlns:q486="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="clientIdentifier" type="q486:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AnalysisTaskCommitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q487="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.DotNet.Services.Framework" minOccurs="0" name="AnalysisTaskCommitResult" nillable="true" type="q487:ServiceResultOfDtoAnalysisTaskyKa_PZV9R" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

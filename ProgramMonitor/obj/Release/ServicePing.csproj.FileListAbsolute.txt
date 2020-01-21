@@ -1,0 +1,6 @@
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\bin\Release\ServicePing.exe.config
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\bin\Release\ServicePing.exe
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\bin\Release\ServicePing.pdb
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\obj\Release\ServicePing.exe
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\obj\Release\ServicePing.pdb
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\obj\Release\ServicePing.csprojAssemblyReference.cache

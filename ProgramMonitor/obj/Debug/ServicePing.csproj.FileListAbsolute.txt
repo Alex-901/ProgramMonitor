@@ -1,0 +1,5 @@
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\bin\Debug\ServicePing.exe.config
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\bin\Debug\ServicePing.exe
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\bin\Debug\ServicePing.pdb
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\obj\Debug\ServicePing.exe
+C:\Users\alexh\Source\Repos\ServicePing\ServicePing\obj\Debug\ServicePing.pdb

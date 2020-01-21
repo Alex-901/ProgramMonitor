@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfDtoPermission">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoPermission" nillable="true" type="tns:DtoPermission" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoPermission" nillable="true" type="tns:ArrayOfDtoPermission" />
+  <xs:complexType name="DtoPermission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PermissionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoPermission" nillable="true" type="tns:DtoPermission" />
+  <xs:complexType name="ArrayOfDtoCompanyRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoCompanyRole" nillable="true" type="tns:DtoCompanyRole" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoCompanyRole" nillable="true" type="tns:ArrayOfDtoCompanyRole" />
+  <xs:complexType name="DtoCompanyRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyRoleId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ContactIds" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PermissionIds" nillable="true" type="q2:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoCompanyRole" nillable="true" type="tns:DtoCompanyRole" />
+  <xs:complexType name="ArrayOfDtoTank">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTank" nillable="true" type="tns:DtoTank" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTank" nillable="true" type="tns:ArrayOfDtoTank" />
+  <xs:complexType name="DtoTank">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Capacity" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="GaugeType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankDiameter" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="TankId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TankType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTank" nillable="true" type="tns:DtoTank" />
+  <xs:complexType name="ArrayOfDtoRegion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoRegion" nillable="true" type="tns:DtoRegion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoRegion" nillable="true" type="tns:ArrayOfDtoRegion" />
+  <xs:complexType name="DtoRegion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ContactIds" nillable="true" type="q3:ArrayOfint" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsExpired" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentRegionId" type="xs:int" />
+      <xs:element minOccurs="0" name="RegionCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionCodeAlias" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RegionId" type="xs:int" />
+      <xs:element minOccurs="0" name="RegionTypeId" type="xs:int" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="RuleIds" nillable="true" type="q4:ArrayOfint" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoRegion" nillable="true" type="tns:DtoRegion" />
+  <xs:complexType name="ArrayOfDtoContact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoContact" nillable="true" type="tns:DtoContact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoContact" nillable="true" type="tns:ArrayOfDtoContact" />
+  <xs:complexType name="DtoContact">
+    <xs:sequence>
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AssignedSiteIds" nillable="true" type="q5:ArrayOfint" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CompanyRoleIds" nillable="true" type="q6:ArrayOfint" />
+      <xs:element minOccurs="0" name="ContactId" type="xs:int" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDisabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastLoginAt" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoContact" nillable="true" type="tns:DtoContact" />
+  <xs:complexType name="ArrayOfDtoCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoCompany" nillable="true" type="tns:DtoCompany" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoCompany" nillable="true" type="tns:ArrayOfDtoCompany" />
+  <xs:complexType name="DtoCompany">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FileReaderIds" nillable="true" type="q7:ArrayOfint" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Regions" nillable="true" type="tns:ArrayOfDtoRegion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoCompany" nillable="true" type="tns:DtoCompany" />
+  <xs:complexType name="ArrayOfDtoSite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSite" nillable="true" type="tns:DtoSite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSite" nillable="true" type="tns:ArrayOfDtoSite" />
+  <xs:complexType name="DtoSite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountManager" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AnalysisStartDay" type="xs:int" />
+      <xs:element minOccurs="0" name="AreaManager" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessLineOrDistributor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessManager" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityOrLocal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DataFeed" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DealerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GaugeMethod" type="xs:int" />
+      <xs:element minOccurs="0" name="IsPendingSite" type="xs:boolean" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="LinkedContactIds" nillable="true" type="q8:ArrayOfint" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReconciliationAlerts" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Regions" nillable="true" type="tns:ArrayOfDtoRegion" />
+      <xs:element minOccurs="0" name="RetailOrDist" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Risk" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiraConfigId" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tanks" nillable="true" type="tns:ArrayOfDtoTank" />
+      <xs:element minOccurs="0" name="TerritoryManager" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UpToDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSite" nillable="true" type="tns:DtoSite" />
+  <xs:complexType name="ArrayOfDtoSiteName">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiteName" nillable="true" type="tns:DtoSiteName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiteName" nillable="true" type="tns:ArrayOfDtoSiteName" />
+  <xs:complexType name="DtoSiteName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiteName" nillable="true" type="tns:DtoSiteName" />
+  <xs:complexType name="ArrayOfDtoTankSystemName">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTankSystemName" nillable="true" type="tns:DtoTankSystemName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTankSystemName" nillable="true" type="tns:ArrayOfDtoTankSystemName" />
+  <xs:complexType name="DtoTankSystemName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="LockedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTankSystemName" nillable="true" type="tns:DtoTankSystemName" />
+  <xs:complexType name="ArrayOfDtoFileReader">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoFileReader" nillable="true" type="tns:DtoFileReader" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoFileReader" nillable="true" type="tns:ArrayOfDtoFileReader" />
+  <xs:complexType name="DtoFileReader">
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CompanyIds" nillable="true" type="q9:ArrayOfint" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileReaderId" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoFileReader" nillable="true" type="tns:DtoFileReader" />
+</xs:schema>

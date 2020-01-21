@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.LobWorks.Services.Framework" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfDtoServerMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoServerMessage" nillable="true" type="tns:DtoServerMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoServerMessage" nillable="true" type="tns:ArrayOfDtoServerMessage" />
+  <xs:complexType name="DtoServerMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ChangeId" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IntParams" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="MessageCategoryId" type="xs:int" />
+      <xs:element minOccurs="0" name="MessageId" type="xs:int" />
+      <xs:element minOccurs="0" name="Param1" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="StrParams" nillable="true" type="q2:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoServerMessage" nillable="true" type="tns:DtoServerMessage" />
+  <xs:complexType name="ServiceCallErrorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCategory" type="tns:ServiceCallErrorInfo.ErrorCategoryType" />
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserFriendlyErrorMessage" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceCallErrorInfo" nillable="true" type="tns:ServiceCallErrorInfo" />
+  <xs:simpleType name="ServiceCallErrorInfo.ErrorCategoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="None" />
+      <xs:enumeration value="General" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ServiceCallErrorInfo.ErrorCategoryType" nillable="true" type="tns:ServiceCallErrorInfo.ErrorCategoryType" />
+  <xs:simpleType name="ServiceCallResultType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unknown" />
+      <xs:enumeration value="Succeeded" />
+      <xs:enumeration value="Timeout" />
+      <xs:enumeration value="Failed" />
+      <xs:enumeration value="Cancelled" />
+      <xs:enumeration value="UnknownClient" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ServiceCallResultType" nillable="true" type="tns:ServiceCallResultType" />
+</xs:schema>

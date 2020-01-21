@@ -1,0 +1,15 @@
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.exe.config
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.exe
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Release\ProgramMonitor.exe
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Release\ProgramMonitor.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.Common.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.Notifications.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.Tasks.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.Common.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.Notifications.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\ProgramMonitor.Tasks.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Release\ProgramMonitor.csprojAssemblyReference.cache
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Release\ProgramMonitor.csproj.CopyComplete
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\Newtonsoft.Json.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Release\Newtonsoft.Json.xml

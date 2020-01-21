@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.BackEnd.Common.DtoTypes" />
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" />
+  <xs:complexType name="ArrayOfDtoCompanyAndSiteItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoCompanyAndSiteItems" nillable="true" type="tns:DtoCompanyAndSiteItems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoCompanyAndSiteItems" nillable="true" type="tns:ArrayOfDtoCompanyAndSiteItems" />
+  <xs:complexType name="DtoCompanyAndSiteItems">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Companies" nillable="true" type="q1:ArrayOfDtoCompany" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Sites" nillable="true" type="q2:ArrayOfDtoSite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoCompanyAndSiteItems" nillable="true" type="tns:DtoCompanyAndSiteItems" />
+  <xs:complexType name="DtoJobCompanyAndSiteItems">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:DtoCompanyAndSiteItems">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DtoJob" nillable="true" type="tns:DtoJob" />
+          <xs:element minOccurs="0" name="TotalTankSystemsNumberInJob" type="xs:int" />
+          <xs:element minOccurs="0" name="VerifiedTankSystemsNumberInJob" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="DtoJobCompanyAndSiteItems" nillable="true" type="tns:DtoJobCompanyAndSiteItems" />
+  <xs:complexType name="DtoJob">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="JobId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoJob" nillable="true" type="tns:DtoJob" />
+  <xs:complexType name="ArrayOfDtoSiteTankSystems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiteTankSystems" nillable="true" type="tns:DtoSiteTankSystems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiteTankSystems" nillable="true" type="tns:ArrayOfDtoSiteTankSystems" />
+  <xs:complexType name="DtoSiteTankSystems">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Entities.LobTypes" minOccurs="0" name="LobProducts" nillable="true" type="q3:ArrayOfDtoGrade" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TankNumbers" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element minOccurs="0" name="TankSystems" nillable="true" type="tns:ArrayOfDtoTankSystem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiteTankSystems" nillable="true" type="tns:DtoSiteTankSystems" />
+  <xs:complexType name="ArrayOfDtoTankSystem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTankSystem" nillable="true" type="tns:DtoTankSystem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTankSystem" nillable="true" type="tns:ArrayOfDtoTankSystem" />
+  <xs:complexType name="DtoTankSystem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Capacity" type="xs:double" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="DwmMonitored" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InSystemHistory" nillable="true" type="tns:ArrayOfDtoTankSystemActivePeriodEntry" />
+      <xs:element minOccurs="0" name="IsPendingTankSystem" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastObservationDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Product" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TankNumbers" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTankSystem" nillable="true" type="tns:DtoTankSystem" />
+  <xs:complexType name="ArrayOfDtoTankSystemActivePeriodEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTankSystemActivePeriodEntry" nillable="true" type="tns:DtoTankSystemActivePeriodEntry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTankSystemActivePeriodEntry" nillable="true" type="tns:ArrayOfDtoTankSystemActivePeriodEntry" />
+  <xs:complexType name="DtoTankSystemActivePeriodEntry">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemInSystemsId" type="xs:int" />
+      <xs:element minOccurs="0" name="ToDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTankSystemActivePeriodEntry" nillable="true" type="tns:DtoTankSystemActivePeriodEntry" />
+  <xs:complexType name="ArrayOfDtoSiteTankSystemsChangeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiteTankSystemsChangeResult" nillable="true" type="tns:DtoSiteTankSystemsChangeResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiteTankSystemsChangeResult" nillable="true" type="tns:ArrayOfDtoSiteTankSystemsChangeResult" />
+  <xs:complexType name="DtoSiteTankSystemsChangeResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActuallyMadeChange" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NewState" nillable="true" type="tns:DtoSiteTankSystems" />
+      <xs:element minOccurs="0" name="OrphansWereDeleted" type="xs:boolean" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.BL.Framework.Dto" minOccurs="0" name="Site" nillable="true" type="q6:DtoSite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiteTankSystemsChangeResult" nillable="true" type="tns:DtoSiteTankSystemsChangeResult" />
+  <xs:complexType name="ArrayOfDtoJobCompanyAndSiteItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoJobCompanyAndSiteItems" nillable="true" type="tns:DtoJobCompanyAndSiteItems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoJobCompanyAndSiteItems" nillable="true" type="tns:ArrayOfDtoJobCompanyAndSiteItems" />
+  <xs:complexType name="ArrayOfDtoOperation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoOperation" nillable="true" type="tns:DtoOperation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoOperation" nillable="true" type="tns:ArrayOfDtoOperation" />
+  <xs:complexType name="DtoOperation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperationId" type="xs:int" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Result" nillable="true" type="q7:ArrayOfint" />
+      <xs:element minOccurs="0" name="RunningState" type="xs:int" />
+      <xs:element minOccurs="0" name="StartedBy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeCompleted" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TimeStarted" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoOperation" nillable="true" type="tns:DtoOperation" />
+  <xs:complexType name="ArrayOfDtoSiteAnalysesSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiteAnalysesSummary" nillable="true" type="tns:DtoSiteAnalysesSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiteAnalysesSummary" nillable="true" type="tns:ArrayOfDtoSiteAnalysesSummary" />
+  <xs:complexType name="DtoSiteAnalysesSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TankSystemAnalyses" nillable="true" type="tns:ArrayOfDtoTankSystemAnalysesSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiteAnalysesSummary" nillable="true" type="tns:DtoSiteAnalysesSummary" />
+  <xs:complexType name="ArrayOfDtoTankSystemAnalysesSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTankSystemAnalysesSummary" nillable="true" type="tns:DtoTankSystemAnalysesSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTankSystemAnalysesSummary" nillable="true" type="tns:ArrayOfDtoTankSystemAnalysesSummary" />
+  <xs:complexType name="DtoTankSystemAnalysesSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Analyses" nillable="true" type="tns:ArrayOfDtoAnalysisMetrics" />
+      <xs:element minOccurs="0" name="Product" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTankSystemAnalysesSummary" nillable="true" type="tns:DtoTankSystemAnalysesSummary" />
+  <xs:complexType name="ArrayOfDtoAnalysisMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysisMetrics" nillable="true" type="tns:DtoAnalysisMetrics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysisMetrics" nillable="true" type="tns:ArrayOfDtoAnalysisMetrics" />
+  <xs:complexType name="DtoAnalysisMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="DataDiscrepenciesCount" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstObsDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MDLR" type="xs:double" />
+      <xs:element minOccurs="0" name="PoorDipsCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ReasonCode" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TotalSales" type="xs:double" />
+      <xs:element minOccurs="0" name="TrendLPD" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="TrendPercentage" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysisMetrics" nillable="true" type="tns:DtoAnalysisMetrics" />
+  <xs:complexType name="ArrayOfDtoAnalysis">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysis" nillable="true" type="tns:DtoAnalysis" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysis" nillable="true" type="tns:ArrayOfDtoAnalysis" />
+  <xs:complexType name="DtoAnalysis">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisType" type="xs:int" />
+      <xs:element minOccurs="0" name="ApplicationLockId" type="xs:long" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstObsDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GaugeMethod" type="xs:int" />
+      <xs:element minOccurs="0" name="HasCalibrationError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HasCorrections" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HasExceptionOccuredInLockingProcess" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsDirty" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsObjectLockedByAnotherUser" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsScreamer" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastObsDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LockOwnerUserDomainUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LockOwnerUserFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LockOwnerUserId" type="xs:int" />
+      <xs:element minOccurs="0" name="LockSucceeded" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MDLR" type="xs:double" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.BackEnd.Common.DtoTypes" minOccurs="0" name="Observations" nillable="true" type="q8:ArrayOfDtoObservation" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.BackEnd.Common.DtoTypes" minOccurs="0" name="OpeningDip" nillable="true" type="q9:DtoObservation" />
+      <xs:element minOccurs="0" name="PriorFailResultReasonCode" type="xs:int" />
+      <xs:element minOccurs="0" name="PriorFlagResultReasonCode" type="xs:int" />
+      <xs:element minOccurs="0" name="PriorInconclusiveResultReasonCode" type="xs:int" />
+      <xs:element minOccurs="0" name="PriorPassResultReasonCode" type="xs:int" />
+      <xs:element minOccurs="0" name="PriorResult" type="xs:int" />
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" minOccurs="0" name="RawDataTrend" nillable="true" type="q10:DtoLinearLine" />
+      <xs:element minOccurs="0" name="Result" type="xs:int" />
+      <xs:element minOccurs="0" name="ResultReasonCode" type="xs:int" />
+      <xs:element minOccurs="0" name="StandardDeviation" type="xs:double" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="StatsEngineErrorCode" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystem" nillable="true" type="tns:DtoTankSystem" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalSales" type="xs:double" />
+      <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.Services" minOccurs="0" name="Trend" nillable="true" type="q11:DtoLinearLine" />
+      <xs:element minOccurs="0" name="TrendLPD" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="TrendPercentage" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Verified" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysis" nillable="true" type="tns:DtoAnalysis" />
+  <xs:complexType name="ArrayOfDtoPublishingDataCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoPublishingDataCriteria" nillable="true" type="tns:DtoPublishingDataCriteria" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoPublishingDataCriteria" nillable="true" type="tns:ArrayOfDtoPublishingDataCriteria" />
+  <xs:complexType name="DtoPublishingDataCriteria">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisMonth" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoPublishingDataCriteria" nillable="true" type="tns:DtoPublishingDataCriteria" />
+  <xs:complexType name="ArrayOfDtoAnalysesPublishingData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysesPublishingData" nillable="true" type="tns:DtoAnalysesPublishingData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysesPublishingData" nillable="true" type="tns:ArrayOfDtoAnalysesPublishingData" />
+  <xs:complexType name="DtoAnalysesPublishingData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisJournalId" type="xs:int" />
+      <xs:element minOccurs="0" name="DataDescrepencyCount" type="xs:int" />
+      <xs:element minOccurs="0" name="GaugeMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsPublished" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LossPercentage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MDLR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PoorDipCount" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TanksystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="Throughput" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TrendLpd" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysesPublishingData" nillable="true" type="tns:DtoAnalysesPublishingData" />
+  <xs:complexType name="ArrayOfDtoAnalysesDataToPublish">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysesDataToPublish" nillable="true" type="tns:DtoAnalysesDataToPublish" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysesDataToPublish" nillable="true" type="tns:ArrayOfDtoAnalysesDataToPublish" />
+  <xs:complexType name="DtoAnalysesDataToPublish">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisJournalId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysesDataToPublish" nillable="true" type="tns:DtoAnalysesDataToPublish" />
+  <xs:complexType name="DtoOperatorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="OperatorDomainUserId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="OperatorFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperatorMachineName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OperatorUserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoOperatorInfo" nillable="true" type="tns:DtoOperatorInfo" />
+  <xs:complexType name="DtoMessagesFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DomainUserId" type="xs:int" />
+      <xs:element minOccurs="0" name="MessagesNumber" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoMessagesFilter" nillable="true" type="tns:DtoMessagesFilter" />
+  <xs:complexType name="ArrayOfDtoOperatorInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoOperatorInfo" nillable="true" type="tns:DtoOperatorInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoOperatorInfo" nillable="true" type="tns:ArrayOfDtoOperatorInfo" />
+  <xs:complexType name="ArrayOfDtoAnalysesMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysesMetrics" nillable="true" type="tns:DtoAnalysesMetrics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysesMetrics" nillable="true" type="tns:ArrayOfDtoAnalysesMetrics" />
+  <xs:complexType name="DtoAnalysesMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NumberOfTanks" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfTanksReadyToDeclare" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfTanksWithUnprocessedAnalyses" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfUnprocessedAnalyses" type="xs:int" />
+      <xs:element minOccurs="0" name="StatsEngineError" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysesMetrics" nillable="true" type="tns:DtoAnalysesMetrics" />
+  <xs:complexType name="ArrayOfDtoTankSystemAnalysisMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTankSystemAnalysisMetrics" nillable="true" type="tns:DtoTankSystemAnalysisMetrics" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTankSystemAnalysisMetrics" nillable="true" type="tns:ArrayOfDtoTankSystemAnalysisMetrics" />
+  <xs:complexType name="DtoTankSystemAnalysisMetrics">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NumberOfTankSystemsAnalysisErrored" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfTankSystemsAnalysisInProgress" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTankSystemAnalysisMetrics" nillable="true" type="tns:DtoTankSystemAnalysisMetrics" />
+  <xs:complexType name="ArrayOfDtoRunStateInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoRunStateInfo" nillable="true" type="tns:DtoRunStateInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoRunStateInfo" nillable="true" type="tns:ArrayOfDtoRunStateInfo" />
+  <xs:complexType name="DtoRunStateInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FirstUnverifiedAnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstUnverifiedSiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FirstUnverifiedSiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstUnverifiedTankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="JobId" type="xs:int" />
+      <xs:element minOccurs="0" name="ServerDateAndTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoRunStateInfo" nillable="true" type="tns:DtoRunStateInfo" />
+  <xs:complexType name="ArrayOfDtoTankAnalysisSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoTankAnalysisSummary" nillable="true" type="tns:DtoTankAnalysisSummary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoTankAnalysisSummary" nillable="true" type="tns:ArrayOfDtoTankAnalysisSummary" />
+  <xs:complexType name="DtoTankAnalysisSummary">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Results" nillable="true" type="tns:ArrayOfDtoAnalysisResult" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoTankAnalysisSummary" nillable="true" type="tns:DtoTankAnalysisSummary" />
+  <xs:complexType name="ArrayOfDtoAnalysisResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysisResult" nillable="true" type="tns:DtoAnalysisResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysisResult" nillable="true" type="tns:ArrayOfDtoAnalysisResult" />
+  <xs:complexType name="DtoAnalysisResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" type="xs:int" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysisResult" nillable="true" type="tns:DtoAnalysisResult" />
+  <xs:complexType name="ArrayOfDtoLastestCycleStartDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoLastestCycleStartDate" nillable="true" type="tns:DtoLastestCycleStartDate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoLastestCycleStartDate" nillable="true" type="tns:ArrayOfDtoLastestCycleStartDate" />
+  <xs:complexType name="DtoLastestCycleStartDate">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisStartTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TankSystem" nillable="true" type="tns:DtoTankSystem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoLastestCycleStartDate" nillable="true" type="tns:DtoLastestCycleStartDate" />
+  <xs:simpleType name="DtoSessionCommand">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UseExistingSession" />
+      <xs:enumeration value="CreateNewBrowsingSession" />
+      <xs:enumeration value="CreateNewSavingSession" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DtoSessionCommand" nillable="true" type="tns:DtoSessionCommand" />
+  <xs:complexType name="ArrayOfDtoCalibrationMdlr">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoCalibrationMdlr" nillable="true" type="tns:DtoCalibrationMdlr" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoCalibrationMdlr" nillable="true" type="tns:ArrayOfDtoCalibrationMdlr" />
+  <xs:complexType name="DtoCalibrationMdlr">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalibrationFactor" type="xs:double" />
+      <xs:element minOccurs="0" name="FirstObsDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastObsDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MDLR" type="xs:double" />
+      <xs:element minOccurs="0" name="MonthHeader" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoCalibrationMdlr" nillable="true" type="tns:DtoCalibrationMdlr" />
+  <xs:complexType name="ArrayOfDtoScreamer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoScreamer" nillable="true" type="tns:DtoScreamer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoScreamer" nillable="true" type="tns:ArrayOfDtoScreamer" />
+  <xs:complexType name="DtoScreamer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastObservationId" type="xs:int" />
+      <xs:element minOccurs="0" name="ScreamerId" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WhenIdentified" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoScreamer" nillable="true" type="tns:DtoScreamer" />
+  <xs:complexType name="ArrayOfDtoCalibration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoCalibration" nillable="true" type="tns:DtoCalibration" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoCalibration" nillable="true" type="tns:ArrayOfDtoCalibration" />
+  <xs:complexType name="DtoCalibration">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalibrationFactors" nillable="true" type="tns:ArrayOfDtoCalibrationFactor" />
+      <xs:element minOccurs="0" name="CalibrationId" type="xs:int" />
+      <xs:element minOccurs="0" name="FromDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="ToDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoCalibration" nillable="true" type="tns:DtoCalibration" />
+  <xs:complexType name="ArrayOfDtoCalibrationFactor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoCalibrationFactor" nillable="true" type="tns:DtoCalibrationFactor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoCalibrationFactor" nillable="true" type="tns:ArrayOfDtoCalibrationFactor" />
+  <xs:complexType name="DtoCalibrationFactor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalFactor" type="xs:double" />
+      <xs:element minOccurs="0" name="CalibrationFactorId" type="xs:int" />
+      <xs:element minOccurs="0" name="CalibrationId" type="xs:int" />
+      <xs:element minOccurs="0" name="FromLevel" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoCalibrationFactor" nillable="true" type="tns:DtoCalibrationFactor" />
+  <xs:complexType name="ArrayOfDtoImportedFile">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoImportedFile" nillable="true" type="tns:DtoImportedFile" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoImportedFile" nillable="true" type="tns:ArrayOfDtoImportedFile" />
+  <xs:complexType name="DtoImportedFile">
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ChildFileIds" nillable="true" type="q12:ArrayOfint" />
+      <xs:element minOccurs="0" name="CompanyId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ImportPathId" type="xs:int" />
+      <xs:element minOccurs="0" name="ImportStateId" type="xs:int" />
+      <xs:element minOccurs="0" name="ImportedFileId" type="xs:int" />
+      <xs:element minOccurs="0" name="IsTopLevel" type="xs:boolean" />
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MessageIds" nillable="true" type="q13:ArrayOfint" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentFileId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TimeStampUtc" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoImportedFile" nillable="true" type="tns:DtoImportedFile" />
+  <xs:complexType name="ArrayOfDtoSiraConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiraConfig" nillable="true" type="tns:DtoSiraConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiraConfig" nillable="true" type="tns:ArrayOfDtoSiraConfig" />
+  <xs:complexType name="DtoSiraConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllowNegativeSales" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowPassResultinBlackFlagReport" type="xs:boolean" />
+      <xs:element minOccurs="0" name="AllowShortTermAnalysis" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DefaultCulture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GradeSets" nillable="true" type="tns:ArrayOfDtoSiraGradeConfigSet" />
+      <xs:element minOccurs="0" name="MissingDataNotification" nillable="true" type="tns:DtoMissingDataNotificationTrigger" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NotificationEmail" nillable="true" type="tns:DtoNotificationEmailTrigger" />
+      <xs:element minOccurs="0" name="ReconciliationAnalysis" nillable="true" type="tns:DtoReconciliationAnalysisTrigger" />
+      <xs:element minOccurs="0" name="SiraConfigId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiraConfig" nillable="true" type="tns:DtoSiraConfig" />
+  <xs:complexType name="ArrayOfDtoSiraGradeConfigSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiraGradeConfigSet" nillable="true" type="tns:DtoSiraGradeConfigSet" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiraGradeConfigSet" nillable="true" type="tns:ArrayOfDtoSiraGradeConfigSet" />
+  <xs:complexType name="DtoSiraGradeConfigSet">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HasCustomTrigger" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+      <xs:element minOccurs="0" name="SiraGradeConfigs" nillable="true" type="tns:ArrayOfDtoSiraGradeConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiraGradeConfigSet" nillable="true" type="tns:DtoSiraGradeConfigSet" />
+  <xs:complexType name="ArrayOfDtoSiraGradeConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoSiraGradeConfig" nillable="true" type="tns:DtoSiraGradeConfig" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoSiraGradeConfig" nillable="true" type="tns:ArrayOfDtoSiraGradeConfig" />
+  <xs:complexType name="DtoSiraGradeConfig">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsDefault" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LossInvestigationLpdTrigger" type="xs:double" />
+      <xs:element minOccurs="0" name="LossInvestigationTrigger" type="xs:double" />
+      <xs:element minOccurs="0" name="MonthOfYear" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiraGradeConfig" nillable="true" type="tns:DtoSiraGradeConfig" />
+  <xs:complexType name="DtoMissingDataNotificationTrigger">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DaysInterval" type="xs:int" />
+      <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StartBoundary" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoMissingDataNotificationTrigger" nillable="true" type="tns:DtoMissingDataNotificationTrigger" />
+  <xs:complexType name="DtoNotificationEmailTrigger">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DaysInterval" type="xs:int" />
+      <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StartBoundary" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoNotificationEmailTrigger" nillable="true" type="tns:DtoNotificationEmailTrigger" />
+  <xs:complexType name="DtoReconciliationAnalysisTrigger">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Enabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OutOfToleranceThreshold" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoReconciliationAnalysisTrigger" nillable="true" type="tns:DtoReconciliationAnalysisTrigger" />
+  <xs:complexType name="DtoSiraGradeConfigFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="DoesApplyAll" type="xs:boolean" />
+      <xs:element minOccurs="0" name="GradeId" type="xs:int" />
+      <xs:element minOccurs="0" name="Postcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoSiraGradeConfigFilter" nillable="true" type="tns:DtoSiraGradeConfigFilter" />
+  <xs:complexType name="ArrayOfDtoAuditLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAuditLog" nillable="true" type="tns:DtoAuditLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAuditLog" nillable="true" type="tns:ArrayOfDtoAuditLog" />
+  <xs:complexType name="DtoAuditLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActionDateTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ActionId" type="xs:int" />
+      <xs:element minOccurs="0" name="AdditionalInformation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AuditedObjectId" type="xs:int" />
+      <xs:element minOccurs="0" name="AuditedObjectTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="ClientApplicationId" type="xs:int" />
+      <xs:element minOccurs="0" name="CompanyId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LogDetail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAuditLog" nillable="true" type="tns:DtoAuditLog" />
+  <xs:complexType name="ArrayOfDtoObservationRawDataChangeLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoObservationRawDataChangeLog" nillable="true" type="tns:DtoObservationRawDataChangeLog" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoObservationRawDataChangeLog" nillable="true" type="tns:ArrayOfDtoObservationRawDataChangeLog" />
+  <xs:complexType name="DtoObservationRawDataChangeLog">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdditionalInformation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChangedDeliveryLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ChangedDipLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ChangedSaleLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="DateInserted" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DipLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ModificationDateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ObservationDateTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OriginalDeliveryLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="OriginalDipLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="OriginalSaleLitres" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RawDeliveryLitres" type="xs:double" />
+      <xs:element minOccurs="0" name="RawTankNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SaleLitres" type="xs:double" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Temperature" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoObservationRawDataChangeLog" nillable="true" type="tns:DtoObservationRawDataChangeLog" />
+  <xs:complexType name="ArrayOfDtoAnalysisTask">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoAnalysisTask" nillable="true" type="tns:DtoAnalysisTask" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoAnalysisTask" nillable="true" type="tns:ArrayOfDtoAnalysisTask" />
+  <xs:complexType name="DtoAnalysisTask">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AnalysisId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisTaskId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisWorkTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="AnalysisWorkTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompanyId" type="xs:int" />
+      <xs:element minOccurs="0" name="Done" type="xs:int" />
+      <xs:element minOccurs="0" name="IsScreamer" type="xs:boolean" />
+      <xs:element minOccurs="0" name="JobId" type="xs:int" />
+      <xs:element minOccurs="0" name="JobName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastObsDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProcessingState" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" type="xs:int" />
+      <xs:element minOccurs="0" name="SiteCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SiteId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemId" type="xs:int" />
+      <xs:element minOccurs="0" name="TankSystemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WhenVerified" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoAnalysisTask" nillable="true" type="tns:DtoAnalysisTask" />
+</xs:schema>

@@ -1,0 +1,12 @@
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\ProgramMonitor.Tasks.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\ProgramMonitor.Tasks.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\ProgramMonitor.Notifications.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\ProgramMonitor.Common.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\ProgramMonitor.Notifications.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\ProgramMonitor.Common.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\obj\Debug\ProgramMonitor.Tasks.csprojAssemblyReference.cache
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\obj\Debug\ProgramMonitor.Tasks.csproj.CopyComplete
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\obj\Debug\ProgramMonitor.Tasks.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\obj\Debug\ProgramMonitor.Tasks.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Tasks\bin\Debug\Newtonsoft.Json.xml

@@ -1,0 +1,8 @@
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\bin\Release\ProgramMonitor.Notifications.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\bin\Release\ProgramMonitor.Notifications.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\bin\Release\ProgramMonitor.Common.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\bin\Release\ProgramMonitor.Common.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\obj\Release\ProgramMonitor.Notifications.csprojAssemblyReference.cache
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\obj\Release\ProgramMonitor.Notifications.csproj.CopyComplete
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\obj\Release\ProgramMonitor.Notifications.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor.Notifications\obj\Release\ProgramMonitor.Notifications.pdb

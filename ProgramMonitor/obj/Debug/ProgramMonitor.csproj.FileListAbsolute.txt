@@ -1,0 +1,15 @@
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.exe.config
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.exe
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Debug\ProgramMonitor.exe
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Debug\ProgramMonitor.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.Common.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.Notifications.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.Common.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.Notifications.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Debug\ProgramMonitor.csprojAssemblyReference.cache
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\obj\Debug\ProgramMonitor.csproj.CopyComplete
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.Tasks.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\ProgramMonitor.Tasks.pdb
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\alexh\Source\Repos\ProgramMonitor\ProgramMonitor\bin\Debug\Newtonsoft.Json.xml

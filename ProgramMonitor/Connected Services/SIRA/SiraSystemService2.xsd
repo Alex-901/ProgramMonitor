@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.SiraSystem.DtoTypes" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="DtoLogEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Context" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Level" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Timestamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoLogEvent" nillable="true" type="tns:DtoLogEvent" />
+  <xs:complexType name="DtoClientMetric">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeStampUtc" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Units" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Values" nillable="true" type="tns:ArrayOfDtoClientMetricValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoClientMetric" nillable="true" type="tns:DtoClientMetric" />
+  <xs:complexType name="ArrayOfDtoClientMetricValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoClientMetricValue" nillable="true" type="tns:DtoClientMetricValue" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoClientMetricValue" nillable="true" type="tns:ArrayOfDtoClientMetricValue" />
+  <xs:complexType name="DtoClientMetricValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoClientMetricValue" nillable="true" type="tns:DtoClientMetricValue" />
+  <xs:complexType name="ArrayOfDtoClientInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoClientInfo" nillable="true" type="tns:DtoClientInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoClientInfo" nillable="true" type="tns:ArrayOfDtoClientInfo" />
+  <xs:complexType name="DtoClientInfo">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Activity" nillable="true" type="q1:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="IpAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastHeardFrom" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoClientInfo" nillable="true" type="tns:DtoClientInfo" />
+  <xs:complexType name="ArrayOfDtoLogEvent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoLogEvent" nillable="true" type="tns:DtoLogEvent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoLogEvent" nillable="true" type="tns:ArrayOfDtoLogEvent" />
+  <xs:complexType name="ArrayOfDtoClientMetric">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoClientMetric" nillable="true" type="tns:DtoClientMetric" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoClientMetric" nillable="true" type="tns:ArrayOfDtoClientMetric" />
+</xs:schema>

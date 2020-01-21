@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" />
+  <xs:complexType name="ArrayOfDtoMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DtoMessage" nillable="true" type="tns:DtoMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDtoMessage" nillable="true" type="tns:ArrayOfDtoMessage" />
+  <xs:complexType name="DtoMessage">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="FromDomainUser" nillable="true" type="q1:DtoOperatorInfo" />
+      <xs:element minOccurs="0" name="MessageBody" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageId" type="xs:int" />
+      <xs:element minOccurs="0" name="MessageTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MessageTypeId" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/LeightonOBrien.Hydraulics.Sira.BL.Common.DtoTypes" minOccurs="0" name="ToDomainUser" nillable="true" type="q2:DtoOperatorInfo" />
+      <xs:element minOccurs="0" name="UtcDateTimeSent" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DtoMessage" nillable="true" type="tns:DtoMessage" />
+</xs:schema>

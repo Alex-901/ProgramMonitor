@@ -1,0 +1,35 @@
+[
+   {
+      "Name":"Neo WCF Ping",
+      "Type":"Service",
+      "SQLConnectionString":null,
+      "SQLScript":null,
+      "ServiceURL":"http://auae2/Services.Sira.WcfHost.Hosting/SiraSystemService.svc",
+      "ServiceBody":"<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><Ping xmlns=\"http://tempuri.org/\"/></s:Body></s:Envelope>",
+	  "Enabled":true,
+	  "MonitorResponseTime":true,
+	  "ResponseTimeLimit":3000
+   },
+   {
+      "Name":"AU Neo Logging DB Check",
+      "Type":"SQL",
+      "SQLConnectionString":"Data Source=AUDB1;Initial Catalog=NEO_DB;Integrated Security=False;User ID=NEO_ADMIN_SQL2;Password=Cement9Box1;",
+      "SQLScript":"C:\\Users\\alexh\\Documents\\Logging\\AULoggingEmail.sql",
+      "ServiceURL":null,
+      "ServiceBody":null,
+	  "Enabled":true,
+	  "MonitorResponseTime":false,
+	  "ResponseTimeLimit":0
+   },
+   {
+      "Name":"EU Neo Logging DB Check",
+      "Type":"SQL",
+      "SQLConnectionString":"Data Source=EUHD5;Initial Catalog=NEO_DB;Integrated Security=False;User ID=NEO_ADMIN_SQL;Password=Lob1234;",
+      "SQLScript":"C:\\Users\\alexh\\Documents\\Logging\\EULoggingEmail.sql",
+      "ServiceURL":null,
+      "ServiceBody":null,
+	  "Enabled":false,
+	  "MonitorResponseTime":false,
+	  "ResponseTimeLimit":0
+   }
+]
